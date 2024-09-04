@@ -1,6 +1,5 @@
 package com.controle.financeiro.api_fatec.controllers;
 
-import com.controle.financeiro.api_fatec.models.User;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -40,10 +39,5 @@ public class Exemplo1Controller {
         } else {
             return "Ímpar";
         }
-    }
-
-    @PostMapping("/create-user")
-    public String createUser(@RequestBody User user) {
-        return "Olá, " + user.getNome() + " você tem " + user.getIdade() + " anos";
     }
 }
